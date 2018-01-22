@@ -9,7 +9,7 @@ object Application extends App {
 
   val logger = Logger.getLogger(this.getClass)
 
-  val person = new Person("randhir", "kumar", Constant.age, new Address("E73", "Noida", Constant.pinCode))
+  val person = new Person("randhir", "kumar", Constant.age, Constant.salary, new Address("E73", "Noida", Constant.pinCode))
 
   val gson = new Gson
   val jsonObject = gson.toJson(person)

@@ -1,11 +1,11 @@
 package edu.knoldus
 
-@SerialVersionUID(Constant.personUID)
-class Person(firstName: String, lastName: String, @transient age: Int, address: Address) {
+@SerialVersionUID(2020)
+class Person(firstName: String, lastName: String, @transient age: Int = 0, val salary: Int, address: Address) {
 
   override def toString: String = firstName + "  " + lastName + " " + age + " " + address.streetAddress + " " + address.city + " " + address.postalCode
 }
 
-@SerialVersionUID(Constant.addressUID)
+@SerialVersionUID(1993)
 class Address(val streetAddress: String, val city: String, val postalCode: Int) {
 }
